@@ -2,9 +2,9 @@ import numpy as np
 from scipy.integrate import odeint
 from scipy import stats
 from scipy.stats import uniform
-import matplotlib.pyplot as plt
-from matplotlib  import cm
-import matplotlib as mpl
+#import matplotlib.pyplot as plt
+#from matplotlib  import cm
+#import matplotlib as mpl
 
 
 
@@ -174,7 +174,7 @@ def cart_to_polar(x,y):
 
 
     
-def scatter_t(x,y,theta,t):
+#def scatter_t(x,y,theta,t):
     """ Make a scatter plot of swarmalators at time t in the (x,y) plane 
         where swarmalators are colored according to their phase
         
@@ -183,12 +183,12 @@ def scatter_t(x,y,theta,t):
         
     """
     
-    fig = plt.figure(num=None, figsize=(10, 6), dpi=80, facecolor='w', edgecolor='k')
-    norm = mpl.colors.Normalize(vmin=0, vmax=2*np.pi)
-    cmap = cm.gist_rainbow
-    m = cm.ScalarMappable(norm=norm, cmap=cmap)
-    temp = m.to_rgba(np.mod(theta[t,:],2*np.pi))
-    plt.scatter(x[t,:],y[t,:], c = temp, s = 200, alpha = 0.9, marker = 'o',edgecolors='none',cmap = cm.gist_rainbow)
+#    fig = plt.figure(num=None, figsize=(10, 6), dpi=80, facecolor='w', edgecolor='k')
+#    norm = mpl.colors.Normalize(vmin=0, vmax=2*np.pi)
+#    cmap = cm.gist_rainbow
+#    m = cm.ScalarMappable(norm=norm, cmap=cmap)
+#    temp = m.to_rgba(np.mod(theta[t,:],2*np.pi))
+#    plt.scatter(x[t,:],y[t,:], c = temp, s = 200, alpha = 0.9, marker = 'o',edgecolors='none',cmap = cm.gist_rainbow)
 
 
     
@@ -357,8 +357,6 @@ def find_Y_minus_final(x,y,theta):
     return Y
 
 
-
-
 def find_Y_plus_final(x,y,theta):
     numT, num_osc = x.shape
     Y = 1j*np.zeros(num_osc)
@@ -377,7 +375,6 @@ def find_Y_plus_final(x,y,theta):
 
 
 def find_Z_final(x,y,theta):
-    
     numT, num_osc = x.shape
     Z = 1j*np.zeros(num_osc)
     t= -1
@@ -389,9 +386,6 @@ def find_Z_final(x,y,theta):
                 temp += np.exp(1j*theta[t,j]) / dist
         Z[i] = temp / (float(num_osc) + 0*1j)
     return Z
-
-
-
 
 
 def unpack_timestep(sols,n):
