@@ -1,6 +1,11 @@
-# swarmalators
+# Swarmalators
 
-Here is some homemade code that I wrote to simulate swarmalators. The sandbox.ipynb contains an intro, and shows how to use the functions (which is straightforward).
+Source code for simulating swarmalators in various setups
 
-The stability_of_static_async.ipynb contains some work on, well, the stability of the static asycn state, that I wasn't able to figure out fully. 
+### Papers
+
+- [Oscillators that sync and swarm](https://www.nature.com/articles/s41467-017-01190-3) 
+- [Collective behavior of swarmalators on a 1D ring]()
+
+
 
