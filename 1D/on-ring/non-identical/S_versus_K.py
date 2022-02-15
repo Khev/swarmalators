@@ -1,7 +1,10 @@
 import time
 
-import funcs as f
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+
+import funcs as f
 import numpy as np
 
 from multiprocessing import Pool
