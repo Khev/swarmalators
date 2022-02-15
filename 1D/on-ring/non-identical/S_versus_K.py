@@ -10,10 +10,28 @@ from scipy.stats import cauchy
 from scipy.integrate import odeint
 
 
+def truncated_cauchy_rvs(loc=0, scale=1, a=-1, b=1, size=None):
+    """
+    Generate random samples from a truncated Cauchy distribution.
+
+    `loc` and `scale` are the location and scale parameters of the distribution.
+    `a` and `b` define the interval [a, b] to which the distribution is to be
+    limited.
+
+    With the default values of the parameters, the samples are generated
+    from the standard Cauchy distribution limited to the interval [-1, 1].
+    """
+    ua = np.arctan((a - loc)/scale)/np.pi + 0.5
+    ub = np.arctan((b - loc)/scale)/np.pi + 0.5
+    U = np.random.uniform(ua, ub, size=size)
+    rvs =  loc + scale * np.tan(np.pi*(U - 0.5))
+    return rvs
+
+
 def func(K):
 
     # Numerical parameters
-    dt, T, n  = 0.1, 100, 1000 
+    dt, T, n  = 0.1, 100, 10 
     np.random.seed(0)
     x0 = np.random.uniform(-np.pi,np.pi,n);
     theta0 = np.random.uniform(-np.pi,np.pi,n)
@@ -25,7 +43,9 @@ def func(K):
     J = 9.0
     cutoff = int(0.8*T)
     #nu, omega = np.zeros(n), np.zeros(n)
-    nu, omega = cauchy.rvs(size=n), cauchy.rvs(size=n)
+    #nu, omega = cauchy.rvs(size=n), cauchy.rvs(size=n)
+    nu = truncated_cauchy_rvs(0,1,a=-10,b=-10,size=n)
+    omega = truncated_cauchy_rvs(0,1,a=-10,b=-10,size=n)
 
     tic = time.time()
     sols = odeint(f.rhs, z0, t, args=(J,K,n,nu,omega))
@@ -45,14 +65,14 @@ def func(K):
 
 if __name__ == '__main__':
 
-    dt, T, n = 0.1, 100, 1000
+    dt, T, n = 0.1, 100, 10
     J = 9.0
 
     # Run main proceses
     num_workers = 8
     workers = Pool(num_workers)
 
-    Ks = np.linspace(-2,8,32)
+    Ks = np.linspace(-2,8,24)
     out = workers.map(func, Ks)
     Sp = [item[0] for item in out]
     Sm = [item[1] for item in out]
