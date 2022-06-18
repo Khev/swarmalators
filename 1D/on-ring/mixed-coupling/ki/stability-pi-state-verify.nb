@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     20079,        608]
-NotebookOptionsPosition[     18337,        571]
-NotebookOutlinePosition[     18733,        587]
-CellTagsIndexPosition[     18690,        584]
+NotebookDataLength[     19356,        586]
+NotebookOptionsPosition[     17707,        550]
+NotebookOutlinePosition[     18103,        566]
+CellTagsIndexPosition[     18060,        563]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -99,27 +99,6 @@ Cell["Compute \[Lambda]\[CloseCurlyQuote]s analytically using mathematica", \
  CellChangeTimes->{{3.8645091765044537`*^9, 
   3.864509186162095*^9}},ExpressionUUID->"72d810fc-eb68-4eb3-8b03-\
 6d3c31ade24e"],
-
-Cell[TextData[{
- "I\[CloseCurlyQuote]ll do this is (\[Xi], \[Eta]) coordinates. The fixed \
-points are ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    RowBox[{
-     RowBox[{"(", 
-      RowBox[{"\[Xi]", ",", " ", "\[Eta]"}], ")"}], "=", 
-     RowBox[{"(", 
-      RowBox[{"0", ",", "0"}], ")"}]}], ",", 
-    RowBox[{
-     RowBox[{"(", 
-      RowBox[{"0", ",", "\[Pi]"}], ")"}], "."}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "59283dd4-50af-4375-a732-25e505a9c63b"]
-}], "Text",
- CellChangeTimes->{{3.864509270443583*^9, 
-  3.864509329856985*^9}},ExpressionUUID->"0e142039-9634-4090-92c2-\
-9c62c4274b06"],
 
 Cell[CellGroupData[{
 
@@ -599,15 +578,14 @@ Cell[1466, 52, 1235, 39, 73, "Input",ExpressionUUID->"c78ed030-0dc8-400b-af20-36
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2738, 96, 219, 4, 54, "Subsection",ExpressionUUID->"72d810fc-eb68-4eb3-8b03-6d3c31ade24e"],
-Cell[2960, 102, 627, 19, 35, "Text",ExpressionUUID->"0e142039-9634-4090-92c2-9c62c4274b06"],
 Cell[CellGroupData[{
-Cell[3612, 125, 9463, 269, 766, "Input",ExpressionUUID->"b7644a20-ccf8-4157-a194-d7249f0abeeb"],
-Cell[13078, 396, 288, 5, 24, "Print",ExpressionUUID->"cfebcaa6-8eaa-4a2f-8661-b7c54afbcd1f"],
-Cell[13369, 403, 2613, 87, 216, "Output",ExpressionUUID->"fbb536f0-c7bc-4fbf-9481-77865397d6dd"],
-Cell[15985, 492, 338, 6, 24, "Print",ExpressionUUID->"c9bd13af-bad2-44e5-8ba4-9229fc49b845"],
-Cell[16326, 500, 1809, 61, 156, "Output",ExpressionUUID->"23afd4f3-fe48-45b0-b747-b349ed812a46"]
+Cell[2982, 104, 9463, 269, 766, "Input",ExpressionUUID->"b7644a20-ccf8-4157-a194-d7249f0abeeb"],
+Cell[12448, 375, 288, 5, 24, "Print",ExpressionUUID->"cfebcaa6-8eaa-4a2f-8661-b7c54afbcd1f"],
+Cell[12739, 382, 2613, 87, 216, "Output",ExpressionUUID->"fbb536f0-c7bc-4fbf-9481-77865397d6dd"],
+Cell[15355, 471, 338, 6, 24, "Print",ExpressionUUID->"c9bd13af-bad2-44e5-8ba4-9229fc49b845"],
+Cell[15696, 479, 1809, 61, 156, "Output",ExpressionUUID->"23afd4f3-fe48-45b0-b747-b349ed812a46"]
 }, Open  ]],
-Cell[18150, 564, 159, 3, 35, "Text",ExpressionUUID->"7194886a-4378-435d-9ae1-f80245316dc0"]
+Cell[17520, 543, 159, 3, 35, "Text",ExpressionUUID->"7194886a-4378-435d-9ae1-f80245316dc0"]
 }, Open  ]]
 }, Open  ]]
 }
