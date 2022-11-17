@@ -11,5 +11,6 @@ Source code for simulating swarmalators in various setups
 - [Swarmalators on a ring with distributed couplings](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.105.064208)
 - [Diverse behaviors in swarmalator systems](https://arxiv.org/abs/2211.06439)
 - [Swarmalators with delayed interactions](https://arxiv.org/abs/2210.11417)
+- [Pinning in a system of swarmalators](https://arxiv.org/abs/2211.02353)
 
 
