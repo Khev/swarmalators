@@ -16,4 +16,16 @@ Source code for simulating swarmalators in various setups
 - [Swarmalators on a ring with asymmetric pinning](https://arxiv.org/abs/2211.02353)
 - [Solvable model of driven matter with pinning](https://arxiv.org/pdf/2306.09589.pdf)
 
+## Contributing
+If you would like to contribute to the development of this project, please [contact me](kevin.p.okeeffe@gmail.com)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments
+- List of contributors and acknowledgment to third-party tools or libraries used in the project.
+
+## Contact
+For queries and collaboration, feel free to contact the repository owner or open an issue.
+
 
