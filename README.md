@@ -10,7 +10,7 @@ Source code for simulating swarmalators in various setups
 - [Solvable model of non-identical swarmalators](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.208002)
 - [Swarmalators on a ring with distributed couplings](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.105.064208)
 - [Mixed sign interactions in the 1D swarmalator model](https://arxiv.org/pdf/2309.02342.pdf)
-- [Swarmalators with thermal noise](https://arxiv.org/abs/2302.11820)
+- [Swarmalators with thermal noise](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.023105)
 - [Diverse behaviors in swarmalator systems](https://www.nature.com/articles/s41467-023-36563-4)
 - [Swarmalators with delayed interactions](https://arxiv.org/abs/2210.11417)
 - [Pinning in a system of swarmalators](https://arxiv.org/abs/2211.02353)
