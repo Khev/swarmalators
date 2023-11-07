@@ -27,7 +27,7 @@ T = 200
 
 dist_type = 'cauchy_random'
 for n_trial in [1]:
-    for n in [10**5]:
+    for n in [10**1]:
         header = f'Starting simulation with N = {n} and distribution type = {dist_type}'
         header_print(header) 
         start_time = time.time()  # Get the current time in seconds since the Epoch
